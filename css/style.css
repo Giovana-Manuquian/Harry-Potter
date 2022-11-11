@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Josefin+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    /* background-color: #0E0E11; */
+    background-image: url('../img/a\ \(1\).png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* .cabecalho {
+    background-color: #201610;
+    margin-top: 10px;
+} */
+
+/* .cabecalho-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.cabecalho-menu a {
+    color: #C19329;
+    font-size: 1em;
+}
+
+.cabecalho-menu a:hover {
+    background: #834408;
+    color: black;
+    border-radius: 5px;
+    padding: 3px;
+} */
+
+.hp img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    font-size: 1.8em;
+    font-family: 'La Belle Aurore';
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    color: rgba(245, 245, 245, 0.712);
+}
+
+/* container filmes */
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin-top: 70px;
+    /* background-color: #0E0E11; */
+    /* background-image: url('../img/a.png'); */
+}
+
+/* configurações dos cards */
+.card {
+    position: relative;
+    width: 180px;
+    height: 330px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    /* background-color: rgba(245, 245, 245, 0.11); */
+    background-image: url('../img/card.png');
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(225, 225, 225, 0.5);
+    border-left: 1px solid rgba(225, 225, 225, 0.5);
+    /* backdrop-filter: blur (5px); */
+}
+
+/* configurações das informações dentro dos cards */
+.content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    /* elemento que irá fazer o texto ir para cima e para baixo */
+    opacity: 0;
+    transform: 0.5s;
+}
+
+/* ao passar o mouse em cima, as informações aparecem */
+.card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.content h2 {
+    position: absolute;
+    top: -55px;
+    right: 10px;
+    font-size: 2.5em;
+    font-family: 'Italianno', cursive;
+    color: rgba(22, 22, 21, 0.5);
+    /* controla como aquele elemento responderá aos eventos do mouse do usuário */
+    pointer-events: none;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    /* font-family: ; */
+    color: rgba(245, 245, 245, 0.733);
+    z-index: 1;
+    /* especifica a ordem da pilha de um elemento do anúncio */
+}
+
+.content p {
+    padding-top: 20px;
+    font-size: 1.3em;
+    /* font-family: ; */
+    color: rgba(245, 245, 245, 0.733);
+    /* font-weight: 100; */
+}
+
+.casas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    font-size: 1.8em;
+    font-family: 'La Belle Aurore';
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    color: rgba(245, 245, 245, 0.712);
+}
+
+.houses {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    /* background-color: #0E0E11; */
+    /* background-image: url('../img/a.png'); */
+}
+
+.houses img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.curiosity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.curiosidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 46px;
+    font-size: 1.8em;
+    font-family: 'La Belle Aurore';
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    color: rgba(245, 245, 245, 0.712);
+
+}
+
+.informacoes {
+    position: relative;
+    width: 200px;
+    height: 287px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(245, 245, 245, 0.11);
+    border-top: 1px solid rgba(74, 26, 22, 0.80);
+    border-left: 1px solid rgba(74, 26, 22, 0.80);
+}
+
+.informacoes h3 {
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 0.9em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(245, 245, 245, 0.801);
+}
+
+.informacoes p {
+    /* margin-top: 2px; */
+    padding: 10px 20px 10px 20px;
+    font-size: 0.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgba(245, 245, 245, 0.801);
+    z-index: 1;
+}
